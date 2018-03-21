@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="file.css" />
+    <title>Strawberry Field</title>
+</head>
+
+
+<body>
+    <header>
+        <div class="container">
+            <section id="logo">
+                <img src="images/logo.jpg" />
+            </section>
+
+            <h1>
+                <span style="color: #ff1a1a">Strawberry</span><span style="color:black"> Field</span>
+            </h1>
+
+            <nav>
+                <ul>
+                    <li><a href="">NASLOVNA</a></li>
+                    <li><a href="">O NAMA</a></li>
+                    <li><a href="">KURSEVI</a></li>
+                    <li><a href="">PREVODI</a></li>
+                    <li><a href="">KONTAKT</a></li>
+
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="saradnja">
+        <img src="images/saradnja.jpg" height="280px" width="400px" />
+        <img src="images/gete.jpg" height="280px" width="340px" />
+        <h3> Škola stranih jezika "STRAWBERRY FIELD" je u saradnji sa Institutom za strane jezike</br><span>iz Beograda i registrovana pri Britanskom Savetu i Geteovom Institutu</span> </h3>
+        <button type="button">Detaljnije</button>
+    </section>
+
+
+    <section id="upis">
+        <h2>Kursevi</h2>
+        <img src="images/odrasli.jpg" height="300px" width="400px" />
+        <section id="upistekst">
+            <p>Obaveštavamo sve zainteresovane polaznike da 10.04.2018. godine pokrećemo kurseve engleskog jezika od pocetnih do naprednih nivoa. Kurs traje 4 meseca i nastava se odvija tri puta nedeljno po 45 minuta. Za više informacija o kursevima i o
+                terminima procitajte vise.
+                </br>Cena kursa je...</p>
+            <button type="button">Procitaj vise</button>
+        </section>
+    </section>
+
+    <section id="kursevi">
+        <h2>Prevodi</h2>
+        <img src="images/prevodi.jpg" height="300px" width="400px" />
+        <section id="kursevitekst">
+            <p>Škola stranih jezika "Strawberry Field" se bavi i prevodilackim uslugama.
+
+                </br>
+            </p>
+            <button type="button">Procitaj vise</button>
+        </section>
+
+    </section>
+
+    <section id="onama">
+        <h2>O nama</h2>
+        <img src="images/logo1.jpg" height="300px" width="300px" />
+        <section id="onamatekst">
+            <p>Škola "Strawberry Field" je osnovana 1996. godine u Paraćinu.
+                </br>
+            </p>
+            <button type="button">Procitaj vise</button>
+        </section>
+    </section>
+
+    <section id="galerija">
+        <img src="galerija/slika1.jpg" alt="" id="current">
+        <img src="galerija/slika1.jpg" alt="" class="sledeca">
+        <img src="galerija/slika2.jpg" alt="" class="sledeca">
+        <img src="galerija/slika3.jpg" alt="" class="sledeca">
+        <img src="galerija/slika4.jpg" alt="" class="sledeca">
+        <img src="galerija/slika5.jpg" alt="" class="sledeca">
+        <img src="galerija/slika6.jpg" alt="" class="sledeca">
+    </section>
+
+
+    <section id="lokacija">
+        <h1>Lokacija</h1>
+        <div id="map"></div>
+        <script>
+            function initMap() {
+                var uluru = {
+                    lat: 43.861477,
+                    lng: 21.422272
+                };
+                var map = new google.maps.Map(document.getElementById('map'), {
+                    zoom: 17,
+                    center: uluru
+                });
+                var marker = new google.maps.Marker({
+                    position: uluru,
+                    map: map
+                });
+            }
+        </script>
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBXJjSFSBmK7Ri7BdU48FRQmEsGR988AJM&callback=initMap">
+        </script>
+    </section>
+
+    <section id="kontakt">
+        <h1>Kontaktirajte nas</h1>
+        <ul id="ikonice">
+            <li>
+                <a href=""><img id="prva" src="images/phone.png"></a>
+            </li>
+            <li>
+                <a href=""><img id="druga" src="images/email.png"></a>
+            </li>
+            <li>
+                <a href=""><img id="treca" src="images/facebook.png"></a>
+            </li>
+            <li>
+                <a href=""><img id="cetvrta" src="images/instagram.png"></a>
+            </li>
+        </ul>
+
+        <h3 id="id1">035/558-965</h3>
+        <h3 id="id2"><a href="">sfschool@gmail.com</a></h3>
+        <h3 id="id3"><a href="">Skola stranih jezika "Strawberry Field"</a></h3>
+        <h3 id="id4"><a href="">@strawberry_field_paracin</h3>
+   
+    </section>
+   
+    <footer>
+            <div class="container">
+            <p><span>Copyright &copy; 2018</span> - All Rights Reserved</p>
+            </div>
+        </footer>
+    
+    
+        <script src="main.js"></script>
+</body>
+</html>
